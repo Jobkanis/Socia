@@ -1,0 +1,128 @@
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+}
+
+.screen .formular {
+    border-top-left-radius: 5px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    border-width: 3;
+    border-color: black;
+    border-style: solid
+}
+
+
+/* swapping pages */
+
+.screen .formular .formularswap {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+}
+
+.screen .formular .formularswap * {
+    padding-bottom: 6px;
+    padding-right: 6px;
+    position: absolute;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    border-color: black;
+    border-width: 3px;
+}
+
+.screen .formular .formularswap .loginswap {
+    left: 0%;
+    background-color: gray;
+    text-align: right;
+}
+
+.screen .formular .formularswap .registerswap {
+    right: 0%;
+    background-color: gray;
+    text-align: left;
+}
+
+.screen .login .formularswap .registerswap {
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.screen .register .formularswap .loginswap {
+    border-bottom-style: solid;
+    border-right-style: solid;
+}
+
+
+/* toggle register / login */
+
+.screen .login {
+    background-color: gray;
+}
+
+.screen .register {
+    background-color: gray;
+}
+
+.screen .register .loginformular {
+    visibility: hidden;
+}
+
+.screen .login .registerformular {
+    visibility: hidden;
+}
+
+
+/* formulars */
+
+.screen .formular .form {
+    position: absolute;
+    height: 70%;
+    display: inline-block;
+    top: 30%;
+    width: 100%;
+}
+
+.screen .formular .loginformular {
+    position: absolute;
+}
+
+.screen .formular .registerformular {
+    position: absolute;
+}
+
+.screen .formular .form .button {
+    position: absolute;
+    display: inline-block;
+    bottom: 0%;
+    width: 100%;
+    height: 20%;
+}
+
+.screen .formular .registerformular .button {
+    background: #cebc81;
+}
+
+.screen .formular .loginformular .button {
+    background: #479761;
+}
+
+.screen .formular * * a {
+    text-align: right;
+    display: inline-block;
+    width: 45%;
+    left: 0%;
+}
+
+.screen .formular * * input {
+    display: inline-block;
+    width: 45%;
+    left: 50%;
+}
